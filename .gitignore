@@ -1,0 +1,21 @@
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.log
+
+# Visual Studio
+.vs/
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+
+# Docker
+**/docker-data/
+**/docker-compose.override.yml
+**/Dockerfile.dev
