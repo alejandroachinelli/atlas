@@ -1,21 +1,27 @@
-# .NET
-bin/
-obj/
+# ===== .NET build outputs =====
+**/bin/
+**/obj/
+
+# ===== Visual Studio =====
+.vs/
 *.user
 *.suo
-*.cache
-*.log
+*.userosscache
+*.sln.docstates
 
-# Visual Studio
-.vs/
-
-# VS Code
+# ===== VS Code (opcional: ignora settings locales) =====
 .vscode/
 
-# OS
+# ===== OS junk =====
 .DS_Store
+Thumbs.db
 
-# Docker
+# ===== Logs =====
+*.log
+
+# ===== User secrets / local configs =====
+**/appsettings.Development.json
+**/appsettings.Local.json
+
+# ===== Docker local volumes (si los creás en el repo) =====
 **/docker-data/
-**/docker-compose.override.yml
-**/Dockerfile.dev
