@@ -1,8 +1,7 @@
 ﻿using Atlas.Modules.Identity.Entities;
-using System.Collections.Generic;
-using System.Reflection.Emit;
+using Microsoft.EntityFrameworkCore;
 
-namespace Atlas.Modules.Identity.DbContext;
+namespace Atlas.Modules.Identity.Persistence;
 
 public class IdentityDbContext : DbContext
 {
@@ -17,7 +16,6 @@ public class IdentityDbContext : DbContext
     {
         base.OnModelCreating(modelBuilder);
 
-        // Aplica configuraciones (las creamos en el paso 3)
         modelBuilder.ApplyConfigurationsFromAssembly(typeof(IdentityDbContext).Assembly);
     }
 }
